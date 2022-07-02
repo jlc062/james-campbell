@@ -1,0 +1,15 @@
+.navigator{
+    display: flex;
+    flex-direction: row;
+    div{
+        height: 50px;
+        flex: 1;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            padding: 10 10 10 10;
+        }
+    }
+}
