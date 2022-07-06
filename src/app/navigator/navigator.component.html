@@ -1,14 +1,10 @@
 <div class ="navigator">
-<div>
-    <span><a [routerLink]="['']" routerLinkActive="router-link-active" >Home</a></span>
-</div>
-<div>
-    <span><a [routerLink]="['/Projects']" routerLinkActive="router-link-active" >Projects</a></span>
-</div>
-<div>
-    <span><a [routerLink]="['/QuickLinks']" routerLinkActive="router-link-active">QuickLinks</a> </span>
-</div>
-<div>
-    <span><a [routerLink]="['/Current']" routerLinkActive="router-link-active"> Current</a> </span>
-</div>
+    <div class="nameSpace">
+        <span>James L. Campbell</span>
+    </div>
+    <div class="bar">
+    <div *ngFor="let page of pages">
+        <span ><a id= "{{page.selected}}" (click) = "clicked(page.pageName)" routerLink="{{page.routerLink}}" routerLinkActive="active-link">{{page.pageName}}</a></span>
+    </div>
+    </div>
 </div>

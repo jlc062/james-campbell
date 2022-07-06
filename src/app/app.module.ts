@@ -7,11 +7,11 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { HomePageComponent } from './content/home-page/home-page.component';
-import { BioComponent } from './content/bio/bio.component';
 import { ProjectsComponent } from './content/projects/projects.component';
 import { CurrentComponent } from './content/current/current.component';
 import { QuickLinksComponent } from './content/quick-links/quick-links.component';
 import { ContentComponent } from './content/content.component';
+import { ChessGameComponent } from './content/projects/chess-game/chess-game.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +20,11 @@ import { ContentComponent } from './content/content.component';
     HeaderComponent,
     NavigatorComponent,
     HomePageComponent,
-    BioComponent,
     ProjectsComponent,
     CurrentComponent,
     QuickLinksComponent,
-    ContentComponent
-  ],
+    ContentComponent,
+    ChessGameComponent],
   imports: [
     BrowserModule,
     AppRoutingModule

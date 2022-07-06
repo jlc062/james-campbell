@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './content/home-page';
-import { BioComponent } from './content/bio';
 import { ProjectsComponent } from './content/projects';
 import { CurrentComponent } from './content/current/current.component';
 import { QuickLinksComponent } from './content/quick-links/quick-links.component';
