@@ -1,5 +1,10 @@
+.img-container{
+    display: flex;
+    justify-content: space-around;
+}
 .img1, .img2{
     height: 300px;
+    width: 451px;
     background-size: cover;
 }
 .img1{

@@ -7,27 +7,38 @@
     }
     div{
         height: 130px;
-        background-color: #96ECD3;
         display: flex;
         justify-content: center;
         align-items: center;
         flex: 1;
         >div{
             >span{
-                #true:first-child{
-                    color: white !important;
-                 }
-                a {
-
+                *{
+                    font-family: "Josefin Sans";                    ;
                     text-decoration: none;
                     color: black;
                     font-size: 20px;
                 }
+                #true:first-child{
+                    color: #6c68fc !important;
+                 }
             }
         }
         
-        span {
-            
+
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navigator{
+        flex-direction: column !important;
+        > div{
+            flex-direction: column !important;
+            div{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px    }
         }
     }
+    
 }
