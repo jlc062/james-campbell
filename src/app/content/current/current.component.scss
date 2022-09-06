@@ -1,0 +1,140 @@
+@import "~/src/utilities/variables";
+
+.about-me{
+    padding: 30px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: white;
+}
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    span{
+        font-size: 30px;
+        border-bottom: $text-emphasis solid 2px;
+    }
+}
+.career{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        flex: 1;
+    }
+    .bucknell{
+        flex: 1;
+    }
+    .effectv{
+        flex: 1;
+    }
+
+}
+
+span{
+    font-size: 20px;
+}
+.bucknell{
+    width: 200px;
+    height: 328px;
+    background-image: url('/assets/images/bucknell.jpeg');
+    background-size: cover;
+
+}
+.effectv{
+    width: 200px;
+    height: 285px;
+    background-image: url('/assets/images/effectv_logo.jpeg');
+    background-size: cover;
+}
+.effectv-mobile{
+    background-image: url('/assets/images/effectv_logo.jpeg');
+    background-size: cover;
+}
+.rugby-imgs{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    height: 200px;
+    div{
+        background-size: cover;
+        width: 226px;
+        height: 159px;
+        border-radius: 4px;
+
+    }
+    .rugby1{
+        background-image: url('/assets/images/personal/IMG_0481.jpeg');
+    }
+    .rugby2{
+        background-image: url('/assets/images/personal/IMG_0486.jpeg');
+    }
+    .rugby3{
+        background-image: url('/assets/images/personal/IMG_0522.jpeg');
+    }
+}
+.kayak-area{
+    display: flex;
+    align-items: center;
+    span{
+        margin:35px;
+        flex: 3;
+    }
+    .kayak-img{
+        flex: 1;
+        width: 200px;
+        height: 331px;
+        background-image: url('/assets/images/personal/IMG_1761.jpeg');
+        background-size: cover;
+        border-radius: 4px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about-me{
+        >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .career{
+        flex-direction: column;
+        span{
+            padding: 20px;
+        }
+        div{
+            min-height: 110px;
+            min-width:  220px;
+        }
+    }
+    .effectv{
+        display: none;
+        flex: 0 !important;
+    }
+    .effectv-mobile{
+        display: block;
+        flex: 1 !important;
+    }
+    .rugby-imgs{
+        margin: 0 !important;
+        width: 316px;
+        height: 455px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        >div{
+            margin: 10px;
+
+        }
+    }
+    .kayak-area{
+        flex-direction: column;
+        .kayak-img{
+            min-width: 192px !important;
+            min-height: 218px !important;
+        }
+    }
+}

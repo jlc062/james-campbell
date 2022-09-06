@@ -1,0 +1,137 @@
+<div>
+
+</div>
+<div class="projects">
+    <div class="project-section">
+        <div><span>Easy Trivia</span></div>
+        <div class="project-text-section">
+            <span>
+                I started on this project as a fun way to brush up on my Javascript skills,
+                 and also create an application with Bootstrap from the ground up. I chose trivia 
+                 as the focus point because during my time at college trivia often came up a lot. My 
+                 fraternity often utilized trivia as one of the events in our large philanthropy event
+                  called “Derby Days”. There was also always a trivia night at the local bar every Tuesday. 
+            </span>
+            <span>
+                With this in mind I wanted to make a quick and easy way of accessing trivia questions online. 
+                This site would be helpful for anyone who is hosting a trivia night and looking for good questions, 
+                studying before a trivia event, or just looking to test their intelligence.
+            </span>
+            <span>
+                I built this site using plain HTML, Javascript, CSS, and Bootstrap. I found a randomly generated Trivia 
+                question API. This API allows some additional parameters to be passed, like an access token that prevents the 
+                same questions from showing up in repeated calls. On initialization of the page, I generate this access token 
+                by using a GET request with an XMLHttpRequest object. I then store this token in the users session storage to 
+                make sure they do not get the same questions. I plan on adding in an input for categories of questions so that 
+                users can narrow down the types of trivia questions that are generated.
+            </span>
+            <span>
+                I am currently working on a back-end for the application utilizing Node.js and MongoDB. I would like users to be 
+                able to save questions that they like for later. I plan on hosting the back-end server on Amazon EC2. 
+            </span>
+            <span>
+                Check it out below!
+            </span>
+            <div class="link-container">
+                <a href="https://jlc062.github.io/easytrivia/"> Easy Trivia</a>
+            </div>
+        </div>
+    </div>
+    <div class="project-section">
+        <div><span>3D Networking Chess Project</span></div>
+        <div class="project-text-section">
+            <span>With a team of four developers, we realized that most computerized chess 
+                games left room for improvement with their graphical interface. 
+                We decided to create our own version of a chess game that provided a more exciting user experience.
+            </span>
+            <span>
+                Our team designed and implemented an MVC approach utilizing Java, 
+                and adopted scrum methodologies in order to manage the workload and 
+                complete in a timely manner.
+            </span>
+        </div>
+        <div class ="img-container-chess">
+            <div>
+                <div><span>3D Mode</span></div>
+                <div class="img1 img"></div>
+            </div>
+            <div>
+                <div><span>2D Mode</span></div>
+                <div class="img2 img"></div>
+            </div>
+        </div>
+    </div>
+    <div class="project-section">
+        <div><span>Spell Check Program</span></div>
+        <div class="project-text-section">
+            <span>
+                In an algorithms class, with three other developers, we were tasked with 
+                creating a spellcheck program. The goal of this being to optimize the programs 
+                time complexity. We were told to either use an algorithm, data structure, or a 
+                combination of the two.
+            </span>
+            <span>
+                Our team decided to create the code in C, and use a command line interface 
+                on Linux to present the program. Originally we created a solution utilizing the 
+                Longest Commmon Subsequence algorithm, to find the closest related word in a list 
+                of given words to the mispelled one. This caused our runtime to be O(n*m).
+            </span>
+            <span>
+                However after giving some thought to the best-case runtime, that in which 
+                a word was spelled correctly and entered into our program. The best-case would be 
+                O(n), in order to iterate through our list of known words. We sought to improve this 
+                by creating our own hast table in C so that the best-case runtime would be O(1).
+            </span>
+            <span>
+                Our team was given a little over a week to complete this. Had we had more time 
+                we all would have liked to utilize the hash table for all searches, rather than only correctly 
+                spelled words. We would have liked to hash words into the table basing it off something 
+                similar to ascii values of letters, and modifying this based off order of letters as well. 
+                Then if a person mispelled a word, we would use our hash function to generate the 
+                hash value, check if this was in the hash table ( O(1) ), and if not find the closest value 
+                in the hash table to it. Essentially running in at most O(n) for all words.
+            </span>
+        </div>
+        <div class="img-container">
+            <div class="spellcheck-img"></div>
+        </div>
+    </div>
+    <div class="project-section">
+        <div><span>Searchable Sports Statistics Database</span></div>
+        <div class="project-text-section">
+            <span>
+                For my senior design project, i was placed on a team of 3 developers and given a client who 
+                had a coding project in mind. Our client tasked us with creating a user friendly way of 
+                being able to get information on NBA players based on statistics. The client had wanted this for 
+                mainly for personal use.
+            </span>
+            <span>
+                With these parameters in mind, we found an api online that could provide us with reliable NBA 
+                statisctics information. We then wrote a python script to call the api and save all of the data 
+                returned into a CSV file. We then utilizied another script to put this data into a SQLite database.
+            </span>
+            <span>
+                We created the front-end of our application with javascript, jQuery, html, and css. We handled 
+                requests from the front-end with a python server that would query the SQLite database. It would 
+                then return a new html page with the relevant information returned from the query.
+            </span>
+            <span>
+                Through this porject I particularly learned a lot about javascript, JQuery, and SQL. If I 
+                had to redo the project knowing what I do now. I would have used a front-end framework like Angular 
+                or React to make displaying dynamically loaded data from the database much easier. In addition, instead of 
+                using Python and SQLite, I would have used .NET for the back-end so that we could host and scale 
+                the server using Azure App Service. I also would have used Azure SQL Managed Instance to be able to scale the 
+                database as well. 
+            </span>
+        </div>
+        <div class="video-title">
+            <span>Video Demo</span>
+        </div>
+        <div class="video-container">
+        <video class="video" controls>
+            <source src="/assets/videos/statistcs.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</div>

@@ -1,0 +1,128 @@
+@import "~/src/utilities/variables";
+.projects{
+    background-color: white;
+}
+.projectsHeader{
+    text-align: center;
+}
+.project-section{
+    padding:50px;
+    :first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-size: 30px;
+            border-bottom: $text-emphasis solid 2px;
+        }
+    }
+}
+.project-text-section{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    span{
+        margin: 10px 0 10px 0;
+        font-size: 20px;
+    }
+}
+.img-container-chess{
+    display: flex;
+    justify-content: space-around;
+    > div{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img{
+        margin: 20px;
+        height: 300px;
+        width: 451px;
+        background-size: cover;
+    }
+}
+}
+/*Chess*/
+.img1{
+    background-image: url('/assets/images/chess1.png');
+
+}
+.img2{
+    background-image: url('/assets/images/chess2.png');
+}
+.img-container{
+    display: flex;
+    justify-content: space-around;
+    div{
+        height: 300px;
+        width: 451px;
+        background-size: cover;
+    }
+}
+.video-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    span{
+        color: $text-emphasis;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    .video{
+        height: 290px;
+        width: 90%;
+        border: black solid 2px;
+    }
+}
+/*Spell Check*/
+.spellcheck-img{
+    background-image: url('/assets/images/spellcheck/spell-check.png');
+    height: 179px !important;
+    width: 224px !important;
+
+}
+.link-container{
+    display: flex;
+    justify-content: center;
+    a{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .project-section {
+        >div{
+            >span{
+                text-align: center;
+            }
+        }
+    }
+    .img-container-chess{
+        flex-direction: column !important;
+        >div > .img{
+            height: 251px !important;
+            width: 377px !important;
+            margin: 30px 0 30px 0;
+        }
+    }
+    .img-container {
+        flex-direction: column !important;
+        align-items: center;
+        >div{
+            height: 251px !important;
+            width: 273px !important;
+            margin: 30px 0 30px 0;
+        }
+    }
+    .video{
+        width: auto !important;
+        height: 198px !important;
+    }
+}

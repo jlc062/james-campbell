@@ -1,0 +1,9 @@
+@import "~/src/utilities/variables";
+.layout{
+    background-color: $primary;
+    display:flex;
+    flex-direction: column;
+    .content-area{
+        flex: 1;
+    }
+}

@@ -1,0 +1,21 @@
+<div class="backdrop1">
+    <div class ="navigator">
+        <div class="nameSpace">
+            <span>James L. Campbell</span>
+        </div>
+        <div class="bar">
+            <div *ngFor="let page of pages">
+                <span id= "{{page.selected}}"><a (click) = "clicked(page.pageName)" routerLink="{{page.routerLink}}" routerLinkActive="active-link">{{page.pageName}}</a></span>
+            </div>
+            <div class="dropdown"  (click)="toggleShown()" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+                <div class="dropdown-text"><span class="quick-text">Quick Links</span></div>
+                <div [ngClass]="isLinksShown || isMouseIn ? 'show dropdown-content' : 'dropdown-content'" class="dropdown-content">
+                    <a href="https://www.linkedin.com/in/jimlcampbell/" target="_blank"><span>LinkedIn</span></a>
+                    <a href="https://github.com/jlc062" target="_blank"><span>Git Hub</span></a>
+                    <a href="https://jlc062.github.io/easytrivia/" target="_blank"><span>Easy Trivia</span></a>
+                    <a href="/assets/james-campbell-resume.pdf" download class="resume-text"><span>Resume Download</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
