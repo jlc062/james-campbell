@@ -32,6 +32,7 @@ export class NavigatorComponent implements OnInit {
   toggleShown(){
     if(this.isMouseIn == true){
       this.isMouseIn = false;
+      this.isLinksShown = !this.isLinksShown;
     } else{
       this.isLinksShown = !this.isLinksShown;
     }
@@ -53,7 +54,6 @@ export class NavigatorComponent implements OnInit {
   //   this.isLinksShown = false;
   // }
   ngOnInit(): void {
-    console.log(this.isLinksShown);
     this.pages.forEach(page => {
       this.router.url == page.routerLink? page.on(): page.off();
   });
