@@ -35,7 +35,9 @@
             <span>
                 Our team designed and implemented an MVC approach utilizing Java, 
                 and adopted scrum methodologies in order to manage the workload and 
-                complete in a timely manner.
+                complete in a timely manner. In addition to MVC, our team implemented networking 
+                between computers utlizing Sockets in Java along with BufferedReader and BufferedWriter, in order 
+                to send data about the moves made by players back and forth between the client and server.
             </span>
         </div>
         <div class ="img-container-chess">
@@ -54,28 +56,28 @@
         <div class="project-text-section">
             <span>
                 In an algorithms class, with three other developers, we were tasked with 
-                creating a spellcheck program. The goal of this being to optimize the programs 
-                time complexity. We were told to either use an algorithm, data structure, or a 
+                creating a spellcheck program. The goal of this being to reduce the program&rsquo;s 
+                time complexity. We were told to use an algorithm, data structure, or a 
                 combination of the two.
             </span>
             <span>
-                Our team decided to create the code in C, and use a command line interface 
-                on Linux to present the program. Originally we created a solution utilizing the 
+                Our team decided to create the program in C, and use a command line interface 
+                on Linux to allow for user input. Originally we created a solution utilizing the 
                 Longest Commmon Subsequence algorithm, to find the closest related word in a list 
                 of given words to the mispelled one. This caused our runtime to be O(n*m).
             </span>
             <span>
                 However after giving some thought to the best-case runtime, that in which 
                 a word was spelled correctly and entered into our program. The best-case would be 
-                O(n), in order to iterate through our list of known words. We sought to improve this 
-                by creating our own hast table in C so that the best-case runtime would be O(1).
+                O(n) time complexity, to iterate through our list of known words and check against the input. We sought to improve this 
+                by creating a hast table in C so that the best-case runtime would be O(1).
             </span>
             <span>
                 Our team was given a little over a week to complete this. Had we had more time 
                 we all would have liked to utilize the hash table for all searches, rather than only correctly 
-                spelled words. We would have liked to hash words into the table basing it off something 
-                similar to ascii values of letters, and modifying this based off order of letters as well. 
-                Then if a person mispelled a word, we would use our hash function to generate the 
+                spelled words. We would have liked to hash words into the table potentially based off it off ascii 
+                values of letters, and modifying based off order of letters. 
+                Then if a mispelled word was entered, we would use our hash function to generate the 
                 hash value, check if this was in the hash table ( O(1) ), and if not find the closest value 
                 in the hash table to it. Essentially running in at most O(n) for all words.
             </span>
@@ -90,21 +92,22 @@
             <span>
                 For my senior design project, i was placed on a team of 3 developers and given a client who 
                 had a coding project in mind. Our client tasked us with creating a user friendly way of 
-                being able to get information on NBA players based on statistics. The client had wanted this for 
+                being able to get information on NBA players based on statistics. The client had wanted this 
                 mainly for personal use.
             </span>
             <span>
-                With these parameters in mind, we found an api online that could provide us with reliable NBA 
-                statisctics information. We then wrote a python script to call the api and save all of the data 
-                returned into a CSV file. We then utilizied another script to put this data into a SQLite database.
+                With these parameters in mind, we found an API online that could provide us with reliable NBA 
+                statisctics information. We then wrote a Python script to call the api and save all of the data 
+                returned into a CSV file. At which point we created a Python script to import this data into a SQLite database.
             </span>
             <span>
-                We created the front-end of our application with javascript, jQuery, html, and css. We handled 
-                requests from the front-end with a python server that would query the SQLite database. It would 
-                then return a new html page with the relevant information returned from the query.
+                We created the front-end of our application with Javascript, jQuery, HTML, and CSS. We handled 
+                requests from the front-end with a Python server that would query the SQLite database based off form 
+                data sent to the server in the HTTP request header. It would 
+                then return a new HTML page to the client with results from the query.
             </span>
             <span>
-                Through this porject I particularly learned a lot about javascript, JQuery, and SQL. If I 
+                If I 
                 had to redo the project knowing what I do now. I would have used a front-end framework like Angular 
                 or React to make displaying dynamically loaded data from the database much easier. In addition, instead of 
                 using Python and SQLite, I would have used .NET for the back-end so that we could host and scale 

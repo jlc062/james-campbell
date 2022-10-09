@@ -8,7 +8,6 @@ import { NavigatorComponent } from './navigator/navigator.component';
 import { HomePageComponent } from './content/home-page/home-page.component';
 import { ProjectsComponent } from './content/projects/projects.component';
 import { CurrentComponent } from './content/current/current.component';
-import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
 
@@ -20,7 +19,6 @@ import { CommonModule } from '@angular/common';
     HomePageComponent,
     ProjectsComponent,
     CurrentComponent,
-    ContentComponent,
     FooterComponent],
   imports: [
     BrowserModule,
